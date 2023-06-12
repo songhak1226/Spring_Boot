@@ -1,0 +1,12 @@
+package com.smhrd.shop.converter;
+
+import java.io.File;
+
+public class ImageToBase64 extends ImageConverter<File, String>{
+	
+	@Override
+	public String convert (File f ) throws IOEception{
+		
+	}
+
+}

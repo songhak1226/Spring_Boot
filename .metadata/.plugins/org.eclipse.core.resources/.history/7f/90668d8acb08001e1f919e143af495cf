@@ -1,0 +1,12 @@
+package com.smhrd.board.mapper;
+
+import org.apache.ibatis.annotations.Mapper;
+
+import com.smhrd.board.domain.Board;
+
+@Mapper
+public interface BoardMapper {
+	//BoardMapper insert문의 id값이랑 같은거
+	public int write(Board b);
+
+}

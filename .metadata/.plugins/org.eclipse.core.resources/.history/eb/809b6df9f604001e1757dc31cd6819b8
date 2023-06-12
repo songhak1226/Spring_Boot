@@ -1,0 +1,6 @@
+package com.smhrd.shop.controller;
+
+public class ProductController {
+	// 1. 모든 상품정보 불러오기
+	// 2. 특정 상품 1개에 대한 정보 불러오기
+}

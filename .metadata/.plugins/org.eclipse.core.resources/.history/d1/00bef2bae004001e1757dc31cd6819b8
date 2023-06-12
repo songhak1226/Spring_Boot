@@ -1,0 +1,6 @@
+package com.smhrd.myapp.mapper;
+
+@Mapper
+public interface MemberMapper {
+
+}

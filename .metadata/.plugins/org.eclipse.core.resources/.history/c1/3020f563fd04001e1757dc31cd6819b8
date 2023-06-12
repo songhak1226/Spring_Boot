@@ -1,0 +1,5 @@
+package com.smhrd.shop.converter;
+
+public abstract class ImageConverter {
+
+}

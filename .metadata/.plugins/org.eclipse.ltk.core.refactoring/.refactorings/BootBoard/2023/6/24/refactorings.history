@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;com.smhrd.shop.converter&apos; to &apos;com.smhrd.board.converter&apos;&#x0D;&#x0A;- Original project: &apos;BootBoard&apos;&#x0D;&#x0A;- Original element: &apos;BootBoard/src/main/java/com.smhrd.shop.converter&apos;&#x0D;&#x0A;- Renamed element: &apos;BootBoard/src/main/java/com.smhrd.board.converter&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;com.smhrd.shop.converter&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.smhrd.shop.converter" name="com.smhrd.board.converter" qualified="false" references="true" stamp="1686549375243" textual="false" version="1.0"/>
+</session>
