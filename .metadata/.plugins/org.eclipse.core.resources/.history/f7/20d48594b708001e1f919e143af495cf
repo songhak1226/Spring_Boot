@@ -1,8 +1,0 @@
-#설정할 것들
-#context-root
-server.servlet.context-path=/fullstack
-#tomcat port번호 
-server.port = 8087
-#jsp 경로 설정
-spring.mvc.view.prefix=/WEB-INF/views
-spring.mvc.view.suffix=.jsp
