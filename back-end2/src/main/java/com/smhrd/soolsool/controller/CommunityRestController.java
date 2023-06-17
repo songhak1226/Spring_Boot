@@ -32,10 +32,11 @@ public class CommunityRestController {
 		return array;
 	}
 	
-	@GetMapping("/{idx}")
-	public JSONObject CommunityOne(@PathVariable("idx") int idx) {
-		return service.CommunityOne(idx);
-	}
+	//하나만 가져오는거 (ex: 게시판 클릭시 글 상세)
+//	@GetMapping("/{idx}")
+//	public JSONObject CommunityOne(@PathVariable("idx") int idx) {
+//		return service.CommunityOne(idx);
+//	}
 	
 
 	@PostMapping("/community")
