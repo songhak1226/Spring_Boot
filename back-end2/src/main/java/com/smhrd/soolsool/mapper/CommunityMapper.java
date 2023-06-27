@@ -12,7 +12,7 @@ public interface CommunityMapper {
 	//comunity 전체 정보 불러오기
 	public List<Community> communityList();
 	
-	public Community communityOne(int idx); //Comunity.java에 있는 글순번 idx
+	public Community communityOne(int idx); //Community.java에 있는 글순번 idx
 	
 	public int write(Community c);
 	

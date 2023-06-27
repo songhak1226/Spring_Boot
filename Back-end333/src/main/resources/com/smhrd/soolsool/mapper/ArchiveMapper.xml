@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.smhrd.soolsool.mapper.ArchiveMapper">
+
+	<resultMap id="ArchiveMap"
+		type="com.smhrd.soolsool.domain.Archive">
+		<result property="arc_idx" column="arc_idx" />
+		<result property="arc_title" column="arc_title" />
+		<result property="arc_content" column="arc_content" />
+		<result property="arc_at" column="arc_at" />
+		<result property="arc_file" column="arc_file" />
+		<result property="mb_id" column="mb_id" />
+		<result property="arc_likes" column="arc_likes" />
+	</resultMap>
+
+	<insert id="write"
+		parameterType="com.smhrd.soolsool.domain.Archive">
+		insert into tb_archive(arc_title, arc_content,
+		arc_at,
+		arc_file,
+		mb_id, arc_likes) values (#{arc_title},
+		#{arc_content},
+		sysdate,
+		#{arc_file}, 'id1', 0)
+	</insert>
+
+	<select id="archiveList"
+		resultType="com.smhrd.soolsool.domain.Archive">
+		select * from tb_archive
+	</select>
+
+	<select id="getTotalArchives" resultType="int">
+		SELECT COUNT(*) FROM
+		tb_archive
+	</select>
+
+	<select id="archiveListPage" resultMap="ArchiveMap"
+		parameterType="map">
+		SELECT * FROM tb_archive
+		ORDER BY arc_idx DESC
+		OFFSET
+		#{offset} ROWS FETCH NEXT #{size} ROWS ONLY
+	</select>
+
+</mapper>

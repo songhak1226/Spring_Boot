@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.smhrd.soolsool.mapper.CommunityMapper">
+	<insert id="write"
+		parameterType="com.smhrd.soolsool.domain.Community">
+		insert into tb_community(comm_title, comm_content, comm_at, comm_file,
+		mb_id, comm_likes) values (#{comm_title}, #{comm_content}, sysdate,
+		#{comm_file}, 'id1', 0)
+	</insert>
+
+	<select id="communityList" resultMap="CommunityResultMap">
+		select *
+		from (
+		select *, rownum rn
+		from tb_community
+		order by comm_idx desc
+		)
+		where rn between #{startIdx} and #{endIdx}
+	</select>
+
+	<resultMap type="com.smhrd.soolsool.domain.Community"
+		id="CommunityResultMap">
+		<id property="comm_idx" column="comm_idx" />
+		<result property="comm_title" column="comm_title" />
+		<result property="comm_content" column="comm_content" />
+		<result property="comm_at" column="comm_at" />
+		<result property="comm_file" column="comm_file" />
+		<result property="mb_id" column="mb_id" />
+		<result property="comm_likes" column="comm_likes" />
+	</resultMap>
+</mapper>
