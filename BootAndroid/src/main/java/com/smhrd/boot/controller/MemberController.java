@@ -12,6 +12,7 @@ import com.smhrd.boot.service.MemberService;
 
 import jakarta.servlet.http.HttpServletRequest;
 
+@RestController
 public class MemberController {
 	
 	@Autowired
@@ -20,9 +21,9 @@ public class MemberController {
 	// localhost:8089/join
 	@PostMapping("/join")
 	public String join(HttpServletRequest request) throws JsonMappingException, JsonProcessingException {
-		String andMember = request.getParameter("AndMember");
+		String andMember = request.getParameter("AndMember"); 
 		
-		ObjectMapper om = new ObjectMapper(); // jackson-databind에서 제공
+		ObjectMapper om = new ObjectMapper(); // jackson-databind에서 제공 (라이브러리)
 		AndMember am = om.readValue(andMember, AndMember.class);
 		
 		AndMember result = service.join(am);
@@ -32,6 +33,28 @@ public class MemberController {
 			return "Fail";
 		}
 
+	}
+	
+	@PostMapping("/login")
+	public String login(HttpServletRequest request) throws JsonMappingException, JsonProcessingException {
+		
+		String andMember = request.getParameter("AndMember"); // JSON 형식의 문자열
+		
+		ObjectMapper om = new ObjectMapper();
+		AndMember am = om.readValue(andMember, AndMember.class);
+		
+		// 요청이 들어오면 -> Controller(요청받고, 응답하고) -> Service (요청과 응답사이의 로직 처리)
+		// MyBatis : 		-> Mapper(interface)
+		// jPA 	   :		-> Repository(interface)
+		AndMember result = service.login(am); 
+		
+		System.out.println(result);
+		
+		if(result != null) {
+			return "Success";
+		} else {
+			return "Fail";
+		}
 	}
 
 }

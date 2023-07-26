@@ -16,5 +16,10 @@ public class MemberService {
 		// save = insert랑 비슷함
 		return repository.save(am);
 	}
+	
+	public AndMember login(AndMember am) {
+		// select (where 조건이 붙음)(where id=? and pw=?)
+		return repository.findByIdAndPw(am.getId(), am.getPw());
+	}
 
 }

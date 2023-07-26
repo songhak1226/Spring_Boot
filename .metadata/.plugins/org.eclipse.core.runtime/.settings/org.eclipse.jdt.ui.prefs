@@ -1,9 +1,11 @@
 content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="java.lang.Enum"><rhs name\="org.springframework.web.bind.annotation.RequestMethod"/></lhs><lhs name\="java.lang.constant.Constable"><rhs name\="org.springframework.web.bind.annotation.RequestMethod"/></lhs><lhs name\="java.lang.Exception"><rhs name\="java.io.UnsupportedEncodingException"/><rhs name\="java.io.IOException"/><rhs name\="java.net.MalformedURLException"/></lhs><lhs name\="java.lang.Throwable"><rhs name\="java.io.UnsupportedEncodingException"/><rhs name\="java.io.IOException"/><rhs name\="java.net.MalformedURLException"/></lhs><lhs name\="java.io.IOException"><rhs name\="java.io.UnsupportedEncodingException"/><rhs name\="java.io.IOException"/><rhs name\="java.net.MalformedURLException"/></lhs><lhs name\="org.springframework.http.HttpStatusCode"><rhs name\="org.springframework.http.HttpStatus"/></lhs><lhs name\="java.io.UnsupportedEncodingException"><rhs name\="java.io.UnsupportedEncodingException"/></lhs><lhs name\="java.io.File"><rhs name\="java.io.File"/></lhs><lhs name\="com.smhrd.soolsool.converter.ImageConverter"><rhs name\="com.smhrd.soolsool.converter.ImageToBase64"/></lhs><lhs name\="org.springframework.core.io.InputStreamSource"><rhs name\="org.springframework.core.io.UrlResource"/><rhs name\="org.springframework.core.io.FileSystemResource"/></lhs><lhs name\="org.springframework.core.io.Resource"><rhs name\="org.springframework.core.io.UrlResource"/><rhs name\="org.springframework.core.io.FileSystemResource"/></lhs><lhs name\="java.net.MalformedURLException"><rhs name\="java.net.MalformedURLException"/></lhs></history>
 content_assist_number_of_computers=15
 eclipse.preferences.version=1
+java_single_line_comment=255,128,192
 org.eclipse.jdt.internal.ui.navigator.layout=2
 org.eclipse.jdt.internal.ui.navigator.librariesnode=true
 org.eclipse.jdt.ui.formatterprofiles.version=23
+sourceHoverBackgroundColor=47,47,47
 spelling_locale_initialized=true
 typefilter_migrated_2=true
 useAnnotationsPrefPage=true

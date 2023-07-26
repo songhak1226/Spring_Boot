@@ -1,4 +1,6 @@
 //org.eclipse.ui.commands/state/org.eclipse.ui.navigator.resources.nested.changeProjectPresentation/org.eclipse.ui.commands.radioState=false
+ColorsAndFontsPreferencePage.expandedCategories=Torg.eclipse.ui.workbenchMisc\tTorg.eclipse.jdt.ui.presentation
+ColorsAndFontsPreferencePage.selectedElement=CQUALIFIER_COLOR
 PLUGINS_NOT_ACTIVATED_ON_STARTUP=;org.eclipse.m2e.discovery;
 eclipse.preferences.version=1
 org.eclipse.jdt.ui.ColoredLabels.match_highlight=206,92,0
